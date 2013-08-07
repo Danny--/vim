@@ -38,6 +38,7 @@ set wildmode=list:longest,full
 colorscheme molokai
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_clear_cache_on_exit=0
 
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
@@ -69,4 +70,4 @@ map <Leader>t :!rspec spec<cr>
 
 inoremap <% <%%><Left><Left><Space><Space><Left><Left>
 
-inoremap do<cr> do<cr>end<Esc>ko
+"inoremap do<cr> do<cr>end<Esc>ko
