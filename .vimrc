@@ -67,6 +67,6 @@ inoremap { {}<Left>
 map <Leader>bi :!bundle install;bundle update;bundle install<cr>
 map <Leader>t :!rspec spec<cr>
 
-inoremap <% <%%><Left><Left><Space><Space><Left><Left>
+inoremap <% <%%><Left><Left><Space><Left><Left>
 
 inoremap do<cr> do<cr>end<Esc>ko
