@@ -37,18 +37,24 @@ set wildmode=list:longest,full
 
 colorscheme molokai
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
 set bs=2
 
 set nobackup
 set nowritebackup
 set noswapfile
 
+"""""""""""""""""""""""""""""" Plugins """""""""""""""""""""""""""""""""""""""
+
+" ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" supertab
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+" pathogen
 execute pathogen#infect()
 
+" syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
   \ 'active_filetypes': [],
   \ 'passive_filetypes': ['html'] }
