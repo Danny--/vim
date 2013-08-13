@@ -47,6 +47,12 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+execute pathogen#infect()
+
+let g:syntastic_mode_map = { 'mode': 'active',
+  \ 'active_filetypes': [],
+  \ 'passive_filetypes': ['html'] }
+
 """""""""""""""""""""""""""""" Mappings """""""""""""""""""""""""""""""""""""
 
 let mapleader=","
