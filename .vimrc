@@ -45,8 +45,6 @@ set noswapfile
 
 set so=14 " Keep cursor away from edges of screen
 
-au CursorHoldI * stopinsert " Automatically leave insert mode
-
 set encoding=utf8
 
 """""""""""""""""""""""""""""" Plugins """""""""""""""""""""""""""""""""""""""
@@ -93,7 +91,7 @@ inoremap def def<cr>end<Esc>kea
 
 inoremap <html <html><cr></html><Esc>ko
 inoremap <p <p></p><Left><Left><Left><Left><Space><Left>
-inoremap <h1 <h1></h1><Left><Left><Left><Left><Space><Left>
-inoremap <title <title></title><Left><Left><Left><Left><Space><Left>
+inoremap <h1 <h1></h1><Left><Left><Left><Left><Left><Space><Left>
+inoremap <title <title></title><Left><Left><Left><Left><Left><Left><Left><Left><Space><Left>
 inoremap <body <body><cr></body><Esc>ko
 inoremap <head <head><cr></head><Esc>ko
