@@ -77,6 +77,8 @@ map <Leader>w <Esc>:wa<cr>
 inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
 
 " Ruby / Rails
 
