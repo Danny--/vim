@@ -43,6 +43,12 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+set so=14 " Keep cursor away from edges of screen
+
+au CursorHoldI * stopinsert " Automatically leave insert mode
+
+set encoding=utf8
+
 """""""""""""""""""""""""""""" Plugins """""""""""""""""""""""""""""""""""""""
 
 " ctrlp
