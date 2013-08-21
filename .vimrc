@@ -80,5 +80,11 @@ map <Leader>bi :!bundle install;bundle update;bundle install<cr>
 map <Leader>t :!rspec spec<cr>
 
 inoremap <% <%%><Left><Left><Space><Left>
-
 inoremap do<cr> do<cr>end<Esc>ko
+inoremap def def<cr>end<Esc>kea
+
+" HTML
+
+inoremap <html <html><cr></html><Esc>ko
+inoremap <p <p></p><Left><Left><Left><Left><Space><Left>
+inoremap <h1 <h1></h1><Left><Left><Left><Left><Space><Left>
