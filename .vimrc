@@ -87,13 +87,15 @@ map <Leader>t :!rspec spec<cr>
 
 inoremap <% <%%><Left><Left><Space><Left>
 inoremap do<cr> do<cr>end<Esc>ko
-inoremap def def<cr>end<Esc>kea
+inoremap def def<cr>end<Esc>ka
 
 " HTML
 
-inoremap <html <html><cr></html><Esc>ko
+inoremap <html <html><cr></html><Esc>ko<tab>
 inoremap <p <p></p><Left><Left><Left><Left><Space><Left>
 inoremap <h1 <h1></h1><Left><Left><Left><Left><Left><Space><Left>
+inoremap <li <li><cr></li><Esc>ko<tab>
+inoremap <ul <ul><cr></ul><Esc>ko
 inoremap <title <title></title><Left><Left><Left><Left><Left><Left><Left><Left><Space><Left>
-inoremap <body <body><cr></body><Esc>ko
-inoremap <head <head><cr></head><Esc>ko
+inoremap <body <body><cr></body><Esc>ko<tab>
+inoremap <head <head><cr></head><Esc>ko<tab>
