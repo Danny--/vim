@@ -74,6 +74,8 @@ inoremap <Leader>w <Esc>:wa<cr>
 map <Leader>q <Esc>:wq<cr>
 map <Leader>w <Esc>:wa<cr>
 
+map <Leader>i <Esc>gg=G
+
 inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
