@@ -82,6 +82,9 @@ inoremap { {}<Left>
 inoremap ' ''<Left>
 inoremap " ""<Left>
 
+map dw diw
+map cw ciw
+
 " Ruby / Rails
 
 map <Leader>bi :!bundle install;bundle update;bundle install<cr>
