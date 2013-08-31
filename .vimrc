@@ -84,6 +84,7 @@ inoremap " ""<Left>
 
 map dw diw
 map cw ciw
+map cl ddko
 
 " Ruby / Rails
 
