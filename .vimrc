@@ -29,6 +29,9 @@ set laststatus=2
 set number
 
 set list listchars=tab:»·,trail:·
+set showbreak=↪
+
+match ErrorMsg '\s\+$'
 
 set showmode
 
@@ -46,6 +49,16 @@ set noswapfile
 set so=14 " Keep cursor away from edges of screen
 
 set encoding=utf8
+
+" Removes trailing spaces
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+
+autocmd FileWritePre    * :call TrimWhiteSpace()
+autocmd FileAppendPre   * :call TrimWhiteSpace()
+autocmd FilterWritePre  * :call TrimWhiteSpace()
+autocmd BufWritePre     * :call TrimWhiteSpace()
 
 """""""""""""""""""""""""""""" Plugins """""""""""""""""""""""""""""""""""""""
 
