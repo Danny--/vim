@@ -96,6 +96,7 @@ inoremap ' ''<Left>
 inoremap " ""<Left>
 
 map dw diw
+map dd ddjk
 map cw ciw
 map cl ddko
 map c' ci'
