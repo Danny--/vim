@@ -53,6 +53,7 @@ set encoding=utf8
 " Removes trailing spaces
 function! TrimWhiteSpace()
     %s/\s\+$//e
+    ''
 endfunction
 
 autocmd FileWritePre    * :call TrimWhiteSpace()
