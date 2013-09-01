@@ -98,6 +98,10 @@ inoremap " ""<Left>
 map dw diw
 map cw ciw
 map cl ddko
+map c' ci'
+map c) ci)
+map c] ci]
+map c} ci}
 
 " Ruby / Rails
 
