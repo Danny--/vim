@@ -100,9 +100,15 @@ map dd ddjk
 map cw ciw
 map cl ddko
 map c' ci'
+map c" ci"
+map d' di'
+map d" di"
 map c) ci)
 map c] ci]
 map c} ci}
+map d) di)
+map d] di]
+map d} di}
 
 " Ruby / Rails
 
