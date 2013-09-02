@@ -1,4 +1,5 @@
 syntax on
+filetype off
 
 filetype plugin indent on
 
@@ -68,9 +69,6 @@ autocmd BufWritePre     * :call TrimWhiteSpace()
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-" supertab
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
 " pathogen
 execute pathogen#infect()
 
@@ -78,6 +76,12 @@ execute pathogen#infect()
 let g:syntastic_mode_map = { 'mode': 'active',
   \ 'active_filetypes': [],
   \ 'passive_filetypes': ['html'] }
+
+" vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
 
 """""""""""""""""""""""""""""" Mappings """""""""""""""""""""""""""""""""""""
 
