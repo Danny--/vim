@@ -52,8 +52,10 @@ set encoding=utf8
 
 " Removes trailing spaces
 function! TrimWhiteSpace()
-    %s/\s\+$//e
-    ''
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
 endfunction
 
 autocmd FileWritePre    * :call TrimWhiteSpace()
