@@ -83,11 +83,17 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 
+" YouCompleteMe
+let g:ycm_filetype_blacklist = { }
+
 """""""""""""""""""""""""""""" Mappings """""""""""""""""""""""""""""""""""""
 
 let mapleader=","
 
 inoremap jj <Esc>:w<cr>
+
+" TComment
+map <Leader>c gcc
 
 inoremap <Leader>q <Esc>:wq<cr>
 inoremap <Leader>w <Esc>:wa<cr>
