@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 syntax on
 filetype off
 
@@ -9,7 +7,6 @@ set autoindent
 set ts=2
 set shiftwidth=2
 set expandtab
-set nocompatible
 
 set showmatch
 
@@ -49,17 +46,20 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-set so=14 " Keep cursor away from edges of screen
+set so=14
 
 set encoding=utf8
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=235
 
 " code folding
 set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* loadview
+autocmd BufWinLeave * silent! mkview
+autocmd BufWinEnter * silent! loadview
 
 " Removes trailing spaces
 function! TrimWhiteSpace()
@@ -74,12 +74,13 @@ autocmd FileAppendPre   * :call TrimWhiteSpace()
 autocmd FilterWritePre  * :call TrimWhiteSpace()
 autocmd BufWritePre     * :call TrimWhiteSpace()
 
-"""""""""""""""""""""""""""""" Plugins """""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""" Plugins """"""""""""""""""""""""""""""""""""""""
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " pathogen
+execute pathogen#infect()
 
 " syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
@@ -95,7 +96,7 @@ Bundle 'Valloric/YouCompleteMe'
 " YouCompleteMe
 let g:ycm_filetype_blacklist = { }
 
-"""""""""""""""""""""""""""""" Mappings """""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""" Mappings""""""""""""""""""""""""""""""""""""""""
 
 let mapleader=","
 
@@ -117,6 +118,7 @@ inoremap { {}<Left>
 inoremap ' ''<Left>
 inoremap " ""<Left>
 
+" code folding
 map <Leader>f za
 map <Leader>F zR
 
@@ -136,7 +138,6 @@ map d] di]
 map d} di}
 
 " Ruby / Rails
-
 map <Leader>bi :!bundle install;bundle update;bundle install<cr>
 map <Leader>t :!rspec spec<cr>
 
@@ -145,7 +146,6 @@ inoremap do<cr> do<cr>end<Esc>ko
 inoremap def def<cr>end<Esc>ka
 
 " HTML
-
 inoremap <html <html><cr></html><Esc>ko<tab>
 inoremap <p <p></p><Left><Left><Left><Left><Space><Left>
 inoremap <h1 <h1></h1><Left><Left><Left><Left><Left><Space><Left>
