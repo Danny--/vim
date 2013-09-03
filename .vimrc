@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 syntax on
 filetype off
 
@@ -51,6 +53,14 @@ set so=14 " Keep cursor away from edges of screen
 
 set encoding=utf8
 
+" code folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* loadview
+
 " Removes trailing spaces
 function! TrimWhiteSpace()
   let l = line(".")
@@ -70,7 +80,6 @@ autocmd BufWritePre     * :call TrimWhiteSpace()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " pathogen
-execute pathogen#infect()
 
 " syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
@@ -107,6 +116,9 @@ inoremap [ []<Left>
 inoremap { {}<Left>
 inoremap ' ''<Left>
 inoremap " ""<Left>
+
+map <Leader>f za
+map <Leader>F zR
 
 map dw diw
 map dd ddjk
