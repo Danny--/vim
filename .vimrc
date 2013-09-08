@@ -137,7 +137,7 @@ map d) di)
 map d] di]
 map d} di}
 
-inoremap < <><Left> 
+inoremap < <><Left>
 
 " Ruby / Rails
 map <Leader>bi :!bundle install;bundle update;bundle install<cr>
