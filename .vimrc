@@ -137,6 +137,10 @@ map d) di)
 map d] di]
 map d} di}
 
+" windows
+map <Leader>n <C-w>v
+map ,, <C-w><C-w>
+
 inoremap < <><Left>
 
 " Ruby / Rails
