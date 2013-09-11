@@ -58,6 +58,8 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
+
+" save last view
 autocmd BufWinLeave * silent! mkview
 autocmd BufWinEnter * silent! loadview
 
@@ -86,15 +88,6 @@ execute pathogen#infect()
 let g:syntastic_mode_map = { 'mode': 'active',
   \ 'active_filetypes': [],
   \ 'passive_filetypes': ['html'] }
-
-" vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'Valloric/YouCompleteMe'
-
-" YouCompleteMe
-let g:ycm_filetype_blacklist = { }
 
 """""""""""""""""""""""""""""" Mappings""""""""""""""""""""""""""""""""""""""""
 
