@@ -89,6 +89,8 @@ let g:syntastic_mode_map = { 'mode': 'active',
   \ 'active_filetypes': [],
   \ 'passive_filetypes': ['html'] }
 
+" auto-pairs
+
 """""""""""""""""""""""""""""" Mappings""""""""""""""""""""""""""""""""""""""""
 
 let mapleader=","
@@ -104,12 +106,6 @@ map <Leader>q <Esc>:wq<cr>
 map <Leader>w <Esc>:wa<cr>
 
 map <Leader>i <Esc>gg=G
-
-inoremap ( ()<Left>
-inoremap [ []<Left>
-inoremap { {}<Left>
-inoremap ' ''<Left>
-inoremap " ""<Left>
 
 " code folding
 map <Leader>f za
