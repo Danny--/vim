@@ -136,7 +136,7 @@ map <Leader>t :!rspec spec<cr>
 
 inoremap <% <%%><Left><Left><Space><Left>
 inoremap do<cr> do<cr>end<Esc>ko
-inoremap def def<cr>end<Esc>ka
+inoremap def<cr> def<cr>end<Esc>ka
 
 " HTML
 inoremap <html <html><cr></html><Esc>ko<tab>
