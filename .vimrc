@@ -76,6 +76,9 @@ autocmd FileAppendPre   * :call TrimWhiteSpace()
 autocmd FilterWritePre  * :call TrimWhiteSpace()
 autocmd BufWritePre     * :call TrimWhiteSpace()
 
+" auto save
+:au FocusLost * :wa
+
 """""""""""""""""""""""""""""" Plugins """"""""""""""""""""""""""""""""""""""""
 
 " ctrlp
