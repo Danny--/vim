@@ -120,8 +120,6 @@ inoremap <Leader>w <Esc>:wa<cr>
 map <Leader>q <Esc>:wq<cr>
 map <Leader>w <Esc>:wa<cr>
 
-map <Leader>i <Esc>gg=G
-
 " code folding
 map <Leader>f za
 map <Leader>F zR
